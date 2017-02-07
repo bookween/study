@@ -18,6 +18,12 @@ git commit -am "Commit Message"
 ● ブランチを作成し、切り替える
 git checkout -b feature-A
 
+● ブランチをマージする( p.53 )
+まず、ローカルリポジトリにおいて、マージ先のブランチに切り替えます。
+例えば、masterブランチにfeature-Aブランチをマージさせる場合は、masterブランチに切り替えます。
+
+git merge --no-ff feature-A
+
 ● リモートリポジトリを登録( p.68 )
 git remote add origin git@github.com:github-book/git-tutorial.git
 
@@ -29,3 +35,9 @@ git push -u origin work
 
 originという名前のリモートリポジトリのworkブランチにローカルリポジトリのworkブランチ
 の内容が送信されます。
+
+● 最新のリモートリポジトリブランチを取得する( p.72 )
+まず、ローカルリポジトリにおいて、更新したいブランチに切り替えます。
+現在のリモートリポジトリブランチはfeature-Dです。
+
+git pull origin feature-D
