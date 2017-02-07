@@ -15,6 +15,9 @@ git commit -m "First commit"
 ● addとcommitを一度に行う
 git commit -am "Commit Message"
 
+● ブランチを作成し、切り替える
+git checkout -b feature-A
+
 ● リモートリポジトリを登録( p.68 )
 git remote add origin git@github.com:github-book/git-tutorial.git
 
