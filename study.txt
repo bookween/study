@@ -1,0 +1,28 @@
+# GitHubの勉強
+
+● リポジトリの初期化
+git init
+
+● リポジトリの状態を確認
+git status
+
+● ステージ領域へファイルを追加する
+git add README.md
+
+● リポジトリの歴史を記録
+git commit -m "First commit"
+
+● addとcommitを一度に行う
+git commit -am "Commit Message"
+
+● リモートリポジトリを登録( p.68 )
+git remote add origin git@github.com:github-book/git-tutorial.git
+
+● リモートリポジトリへ送信( p.68 )
+まず、ローカルリポジトリにおいて、送信したいブランチに切り替えます。
+仮に、workブランチの内容を送信したい場合は、以下のようにします。
+
+git push -u origin work
+
+originという名前のリモートリポジトリのworkブランチにローカルリポジトリのworkブランチ
+の内容が送信されます。
