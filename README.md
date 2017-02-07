@@ -1,1 +1,1 @@
-# study
+# GitHubのお勉強
