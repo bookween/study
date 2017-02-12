@@ -42,12 +42,14 @@ originという名前のリモートリポジトリのworkブランチにロー�
 
 git pull origin feature-D
 
-● オリジナルのリポジトリに名前を設定する( p.139 )
-git remote add upstream git@github.com:octocat/Spoon-Knife.git
 
-● 最新のデータを取得する( p.139 )
-最新のデータを取得
-git fetch upstream
+● リモートリポジトリのブランチをローカルリポジトリに複製する
+git checkout -b development origin/development
 
-現在のローカルリポジトリのブランチにupstream/masterブランチをマージする
-git merge upstream/master
+リモートリポジトリのdevelopmentブランチがローカルリポジトリにdevelopmentブランチとして複製される。
+
+● リモートリポジトリのデータを取得する
+fetch origin
+
+特定のブランチのみに限定したい場合は、次のようにします。
+fetch origin development
