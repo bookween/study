@@ -41,3 +41,15 @@ originという名前のリモートリポジトリのworkブランチにロー�
 現在のリモートリポジトリブランチはfeature-Dです。
 
 git pull origin feature-D
+
+
+● リモートリポジトリのブランチをローカルリポジトリに複製する
+git checkout -b development origin/development
+
+リモートリポジトリのdevelopmentブランチがローカルリポジトリにdevelopmentブランチとして複製される。
+
+● リモートリポジトリのデータを取得する
+fetch origin
+
+特定のブランチのみに限定したい場合は、次のようにします。
+fetch origin development
